@@ -1,0 +1,23 @@
+{
+	"name": "한눈에 보는 한국사·세계사 통합 연표",
+	"short_name": "한국사·세계사 연표",
+	"description": "선사·고조선부터 2024년 현대까지 한국·중국·일본·러시아·미국/서구 5개국 핵심 역사 사건 858건을 시대별·분야별 타임라인으로 한눈에 비교하는 인터랙티브 연표",
+	"lang": "ko",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#0b1120",
+	"theme_color": "#0b1120",
+	"categories": [
+		"education",
+		"books",
+		"reference"
+	],
+	"icons": [
+		{
+			"src": "./favicon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		}
+	]
+}
