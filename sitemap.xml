@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<!-- 메인 통합 연표 -->
 	<url>
 		<loc>https://history.jokerx04.com/</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+		<image:image>
+			<image:loc>https://history.jokerx04.com/og-image.png</image:loc>
+		</image:image>
 	</url>
 
 	<!-- 시대별 연표 뷰 -->
 	<url>
 		<loc>https://history.jokerx04.com/?era=ancient</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?era=goryeo</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?era=joseon</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?era=modern_early</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?era=contemporary</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
@@ -43,31 +47,31 @@
 	<!-- 국가별 연표 뷰 -->
 	<url>
 		<loc>https://history.jokerx04.com/?country=korea</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?country=china</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?country=japan</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?country=russia</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://history.jokerx04.com/?country=west</loc>
-		<lastmod>2026-11-20</lastmod>
+		<lastmod>2026-11-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>

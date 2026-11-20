@@ -43,7 +43,7 @@
 	<meta property="og:image" content="https://history.jokerx04.com/og-image.png" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
-	<meta property="og:image:alt" content="한눈에 보는 한국사·세계사 통합 연표 - 5개국 858건 시대별 역사 타임라인" />
+	<meta property="og:image:alt" content="한눈에 보는 한국사·세계사 통합 연표 - 5개국 시대별·분야별 역사 타임라인" />
 
 	<!-- Twitter / X Card -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -1991,27 +1991,6 @@
 			return JSON.parse(decoded);
 		}
 
-		function loadHistoryDataScriptFallback() {
-			return new Promise((resolve, reject) => {
-				if (window.HISTORY_DATA) {
-					resolve(window.HISTORY_DATA);
-					return;
-				}
-				const script = document.createElement("script");
-				script.src = "./history_data.js";
-				script.async = true;
-				script.onload = () => {
-					if (window.HISTORY_DATA) {
-						resolve(window.HISTORY_DATA);
-					} else {
-						reject(new Error("연표 데이터를 찾을 수 없습니다."));
-					}
-				};
-				script.onerror = () => reject(new Error("연표 데이터 로드에 실패했습니다."));
-				document.body.appendChild(script);
-			});
-		}
-
 		function applyTimelineData(data) {
 			const events = data && (data.historyEvents || data.events);
 			if (!data || !Array.isArray(events)) {
@@ -2075,36 +2054,15 @@
 
 		async function initApp() {
 			showLoadingOverlay("연표 데이터를 불러오는 중...");
-			const isFileProtocol = window.location.protocol === "file:";
 
-			// 로컬 환경: 보조 데이터 스크립트 비동기 로드
-			if (isFileProtocol) {
-				try {
-					const localData = await loadHistoryDataScriptFallback();
-					updateLoadingProgress(95, "타임라인과 인과관계를 구성하는 중...");
-					applyTimelineData(localData);
-					startApp();
-					return;
-				} catch (_) {
-					// 보조 로더 실패 시 기본 데이터 요청
-				}
-			}
-
-			// 서버 환경: 연표 데이터 비동기 로드 (진행률 표시)
+			// 연표 데이터 비동기 로드 (진행률 표시)
 			try {
-				const jsonData = await fetchJsonWithProgress("./history_data.json");
+				const jsonData = await fetchJsonWithProgress("./history.json");
 				applyTimelineData(jsonData);
 				startApp();
 			} catch (err) {
-				try {
-					updateLoadingProgress(80, "연표 데이터를 다시 불러오는 중...");
-					const fallbackData = await loadHistoryDataScriptFallback();
-					applyTimelineData(fallbackData);
-					startApp();
-				} catch (_) {
-					console.error("Failed to load timeline data:", err);
-					showDataLoadError(err);
-				}
+				console.error("Failed to load timeline data:", err);
+				showDataLoadError(err);
 			}
 		}
 
