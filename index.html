@@ -216,6 +216,10 @@
 			cursor: grabbing !important;
 			user-select: none;
 		}
+		input[type="search"]::-webkit-search-cancel-button {
+			-webkit-appearance: none;
+			appearance: none;
+		}
 
 		/* 암기 블라인드 모드 */
 		.blind-mode .blind-target {
@@ -381,7 +385,7 @@
 	<!-- ==================== 1. 상단 헤더 & 컨트롤 바 ==================== -->
 	<header class="bg-slatePanel/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 shadow-lg shrink-0">
 		<div class="max-w-[1920px] mx-auto px-2.5 sm:px-5 py-2 sm:py-2.5">
-			<!-- 상단 1행: 타이틀 + 이전/다음 스텝 컨트롤 -->
+			<!-- 상단 1행: 타이틀 + 검색창 + 이전/다음 스텝 컨트롤 -->
 			<div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-800/80">
 				<a href="/" title="한눈에 보는 한국사·세계사 통합 연표 처음으로" class="group flex items-center gap-2.5 min-w-0 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70">
 					<div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-sky-500 via-indigo-500 to-amber-500 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:brightness-110 transition shrink-0">
@@ -394,9 +398,38 @@
 					</h1>
 				</a>
 
-				<div class="flex flex-wrap items-center gap-1.5 sm:gap-2 ml-auto">
+				<div class="flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto sm:flex-1 sm:max-w-xl sm:justify-end">
+					<!-- 검색창 -->
+					<div class="relative flex-1 sm:max-w-md">
+						<svg class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+						</svg>
+						<input
+							id="search-input"
+							type="search"
+							placeholder="사건명, 연도, 인물, #키워드, 설명 검색..."
+							autocomplete="off"
+							aria-label="역사 사건 검색"
+							class="w-full pl-9 pr-14 py-1.5 sm:py-2 rounded-xl bg-slate-900/90 border border-slate-700/90 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/25 focus:outline-none text-xs sm:text-sm text-slate-100 placeholder:text-slate-500 transition"
+						/>
+						<div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1">
+							<button
+								id="btn-clear-search"
+								type="button"
+								title="검색어 지우기 (Esc)"
+								aria-label="검색어 지우기"
+								class="hidden p-1 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 transition"
+							>
+								<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+								</svg>
+							</button>
+							<kbd id="kbd-search-hint" class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono text-[10px] font-semibold text-slate-400 select-none">/</kbd>
+						</div>
+					</div>
+
 					<!-- 이전/다음 스텝 컨트롤 -->
-					<div class="flex items-center gap-1 bg-slate-900/90 border border-slate-700/80 rounded-xl p-1 shadow-inner">
+					<div class="flex items-center gap-1 bg-slate-900/90 border border-slate-700/80 rounded-xl p-1 shadow-inner shrink-0">
 						<button id="btn-prev" title="이전 사건 (←)" class="p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition text-xs font-medium flex items-center gap-1">
 							<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
 							<span class="hidden sm:inline">이전</span>
@@ -553,6 +586,29 @@
 
 					<!-- 사건 노드 카드 레이어 -->
 					<div id="nodes-layer" class="absolute inset-x-0 top-14 bottom-0 z-20"></div>
+				</div>
+			</div>
+
+			<!-- 검색·필터 결과 없음 안내 오버레이 -->
+			<div id="timeline-empty-state" class="hidden absolute inset-0 bottom-10 left-24 sm:left-36 z-30 items-center justify-center p-4 pointer-events-none">
+				<div class="pointer-events-auto max-w-sm w-full p-5 rounded-2xl bg-slatePanel/95 backdrop-blur-md border border-slate-700/90 shadow-2xl text-center space-y-3">
+					<div class="w-11 h-11 mx-auto rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400">
+						<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+						</svg>
+					</div>
+					<p class="text-sm font-bold text-slate-100">검색 조건에 맞는 사건이 없습니다</p>
+					<p id="timeline-empty-desc" class="text-xs text-slate-400 leading-relaxed">
+						다른 검색어나 시대·국가 필터를 선택해 보세요.
+					</p>
+					<div class="pt-1 flex items-center justify-center gap-2 flex-wrap">
+						<button id="btn-empty-expand-scope" type="button" class="hidden px-3 py-1.5 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-500/40 text-sky-300 text-xs font-semibold transition">
+							전체 시대·국가에서 검색
+						</button>
+						<button id="btn-empty-reset" type="button" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-semibold transition">
+							검색·필터 초기화
+						</button>
+					</div>
 				</div>
 			</div>
 
@@ -826,6 +882,7 @@
 			selectedEventId: null,
 			activeEraFilter: "all",
 			activeCountryFilter: "all",
+			searchQuery: "",
 			includeRelations: false,
 			blindMode: false,
 			showArrows: true,
@@ -845,6 +902,13 @@
 			causalSvgLayer: document.getElementById("causal-svg-layer"),
 			causalPathsGroup: document.getElementById("causal-paths-group"),
 			nodesLayer: document.getElementById("nodes-layer"),
+			timelineEmptyState: document.getElementById("timeline-empty-state"),
+			timelineEmptyDesc: document.getElementById("timeline-empty-desc"),
+			btnEmptyExpandScope: document.getElementById("btn-empty-expand-scope"),
+			btnEmptyReset: document.getElementById("btn-empty-reset"),
+			searchInput: document.getElementById("search-input"),
+			btnClearSearch: document.getElementById("btn-clear-search"),
+			kbdSearchHint: document.getElementById("kbd-search-hint"),
 			inspectorPanel: document.getElementById("inspector-panel"),
 			inspectorTitle: document.getElementById("inspector-title"),
 			btnCloseInspector: document.getElementById("btn-close-inspector"),
@@ -891,6 +955,51 @@
 			return window.innerWidth >= 640 ? 144 : 96;
 		}
 
+		function matchesSearch(ev) {
+			const raw = state.searchQuery.trim().toLowerCase();
+			if (!raw) return true;
+			const tokens = raw.split(/\s+/).filter(Boolean);
+			if (tokens.length === 0) return true;
+
+			const cMeta = COUNTRY_META[ev.country];
+			const eMeta = ERA_META[ev.era];
+			const catMeta = CATEGORY_META[ev.category];
+			const haystack = [
+				ev.title,
+				ev.yearLabel,
+				ev.year != null ? String(ev.year) : "",
+				ev.leader,
+				ev.summary,
+				cMeta ? cMeta.name : "",
+				eMeta ? eMeta.name : "",
+				catMeta ? catMeta.label : "",
+				...(ev.keywords || []),
+				...(ev.relations || []).flatMap((r) => [
+					COUNTRY_META[r.country] ? COUNTRY_META[r.country].name : "",
+					r.target,
+					r.note
+				])
+			]
+				.filter(Boolean)
+				.join(" ")
+				.toLowerCase();
+
+			return tokens.every((tok) => {
+				const normalized = tok.startsWith("#") ? tok.slice(1) : tok;
+				return !normalized || haystack.includes(normalized);
+			});
+		}
+
+		function syncSearchInputUI() {
+			const hasSearch = state.searchQuery.trim().length > 0;
+			if (dom.btnClearSearch) {
+				dom.btnClearSearch.classList.toggle("hidden", !hasSearch);
+			}
+			if (dom.kbdSearchHint) {
+				dom.kbdSearchHint.classList.toggle("sm:hidden", hasSearch);
+			}
+		}
+
 		function getFilteredEvents() {
 			return historyEvents.filter((ev) => {
 				if (state.activeEraFilter !== "all" && ev.era !== state.activeEraFilter) {
@@ -905,6 +1014,9 @@
 					if (!isPrimaryCountry && !isRelatedCountry) {
 						return false;
 					}
+				}
+				if (!matchesSearch(ev)) {
+					return false;
 				}
 				return true;
 			});
@@ -993,12 +1105,33 @@
 
 		function renderTimeline() {
 			if (!isDataLoaded) return;
+			syncSearchInputUI();
 			updateCountryFilterCounts();
 			updateEraFilterCounts();
 			const filtered = getFilteredEvents();
 
-			if (state.selectedEventId && filtered.length > 0 && !filtered.some((e) => e.id === state.selectedEventId)) {
+			if (filtered.length === 0) {
+				state.selectedEventId = null;
+			} else if (state.selectedEventId && !filtered.some((e) => e.id === state.selectedEventId)) {
 				state.selectedEventId = filtered[0].id;
+			}
+
+			if (dom.timelineEmptyState) {
+				const isEmpty = filtered.length === 0;
+				dom.timelineEmptyState.classList.toggle("hidden", !isEmpty);
+				dom.timelineEmptyState.classList.toggle("flex", isEmpty);
+				if (isEmpty) {
+					const q = state.searchQuery.trim();
+					if (dom.timelineEmptyDesc) {
+						dom.timelineEmptyDesc.textContent = q
+							? `"${q}"에 해당하는 사건을 찾지 못했습니다. 검색어를 바꾸거나 전체 범위에서 다시 찾아보세요.`
+							: "선택된 시대·국가 필터에 해당하는 사건이 없습니다.";
+					}
+					if (dom.btnEmptyExpandScope) {
+						const isScoped = state.activeEraFilter !== "all" || state.activeCountryFilter !== "all";
+						dom.btnEmptyExpandScope.classList.toggle("hidden", !(q && isScoped));
+					}
+				}
 			}
 
 			const layout = computeLayout(filtered);
@@ -1417,9 +1550,13 @@
 					if (!currentFiltered.some((e) => e.id === targetId)) {
 						state.activeEraFilter = "all";
 						state.activeCountryFilter = "all";
+						if (state.searchQuery) {
+							state.searchQuery = "";
+							if (dom.searchInput) dom.searchInput.value = "";
+						}
 						syncFilterButtonUI();
 						renderTimeline();
-						showToast("연결된 사건을 표시하기 위해 전체 시대·전체 국가 필터로 전환했습니다.");
+						showToast("연결된 사건을 표시하기 위해 검색·필터를 전체로 전환했습니다.");
 					}
 					selectEvent(targetId, true);
 				});
@@ -1440,6 +1577,9 @@
 					if (!isPrimaryCountry && !isRelatedCountry) {
 						return false;
 					}
+				}
+				if (!matchesSearch(ev)) {
+					return false;
 				}
 				return true;
 			});
@@ -1490,6 +1630,9 @@
 		function updateCountryFilterCounts() {
 			const baseEvents = historyEvents.filter((ev) => {
 				if (state.activeEraFilter !== "all" && ev.era !== state.activeEraFilter) {
+					return false;
+				}
+				if (!matchesSearch(ev)) {
 					return false;
 				}
 				return true;
@@ -1614,6 +1757,75 @@
 		/**
 		 * 13. 상단 컨트롤 및 필터 이벤트 바인딩
 		 */
+		function applySearchQuery(query, scrollReset = true) {
+			state.searchQuery = query;
+			if (!isDataLoaded) {
+				syncSearchInputUI();
+				return;
+			}
+			renderTimeline();
+			syncSeoAndUrl();
+			if (scrollReset) {
+				dom.viewport.scrollTo({ left: 0, behavior: "smooth" });
+			}
+		}
+
+		if (dom.searchInput) {
+			dom.searchInput.addEventListener("input", (e) => {
+				applySearchQuery(e.target.value, true);
+			});
+
+			dom.searchInput.addEventListener("keydown", (e) => {
+				if (e.key === "Enter") {
+					e.preventDefault();
+					if (!isDataLoaded) return;
+					const filtered = getFilteredEvents();
+					if (filtered.length > 0) {
+						if (!state.isInspectorOpen) {
+							setInspectorOpen(true);
+						}
+						selectEvent(filtered[0].id, true);
+					} else if (state.searchQuery.trim()) {
+						showToast(`"${state.searchQuery.trim()}" 검색 결과가 없습니다.`);
+					}
+				}
+			});
+		}
+
+		if (dom.btnClearSearch) {
+			dom.btnClearSearch.addEventListener("click", () => {
+				if (dom.searchInput) {
+					dom.searchInput.value = "";
+					dom.searchInput.focus();
+				}
+				applySearchQuery("", true);
+			});
+		}
+
+		if (dom.btnEmptyExpandScope) {
+			dom.btnEmptyExpandScope.addEventListener("click", () => {
+				state.activeEraFilter = "all";
+				state.activeCountryFilter = "all";
+				syncFilterButtonUI();
+				renderTimeline();
+				syncSeoAndUrl();
+				dom.viewport.scrollTo({ left: 0, behavior: "smooth" });
+			});
+		}
+
+		if (dom.btnEmptyReset) {
+			dom.btnEmptyReset.addEventListener("click", () => {
+				state.activeEraFilter = "all";
+				state.activeCountryFilter = "all";
+				state.searchQuery = "";
+				if (dom.searchInput) dom.searchInput.value = "";
+				syncFilterButtonUI();
+				renderTimeline();
+				syncSeoAndUrl();
+				dom.viewport.scrollTo({ left: 0, behavior: "smooth" });
+			});
+		}
+
 		dom.btnPrev.addEventListener("click", () => {
 			stepEvent(-1);
 		});
@@ -1769,12 +1981,27 @@
 					setFamilyMenuOpen(false);
 					return;
 				}
+				if (dom.searchInput && document.activeElement === dom.searchInput) {
+					if (state.searchQuery) {
+						dom.searchInput.value = "";
+						applySearchQuery("", true);
+					} else {
+						dom.searchInput.blur();
+					}
+					return;
+				}
 				if (state.isInspectorOpen) {
 					setInspectorOpen(false);
 					return;
 				}
 			}
 			if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+				return;
+			}
+			if (e.key === "/" && dom.searchInput) {
+				e.preventDefault();
+				dom.searchInput.focus();
+				dom.searchInput.select();
 				return;
 			}
 			if (e.key === "ArrowLeft") {
@@ -1815,10 +2042,15 @@
 			let title = SEO_BASE.title;
 			let description = SEO_BASE.description;
 
+			const trimmedQuery = state.searchQuery.trim();
 			if (selectedEv) {
 				const cMeta = COUNTRY_META[selectedEv.country] || COUNTRY_META.korea;
 				title = `${selectedEv.title} (${selectedEv.yearLabel}) | 한국사·세계사 통합 연표`;
 				description = `[${cMeta.name} · ${selectedEv.yearLabel}] ${selectedEv.summary}`;
+			} else if (trimmedQuery) {
+				const count = getFilteredEvents().length;
+				title = `"${trimmedQuery}" 검색 결과 (${count}건) | 한눈에 보는 한국사·세계사 통합 연표`;
+				description = `"${trimmedQuery}" 관련 역사 사건 ${count}건을 시대별·분야별 타임라인과 인과관계 화살표로 확인해 보세요.`;
 			} else if (state.activeEraFilter !== "all" || state.activeCountryFilter !== "all") {
 				const parts = [];
 				if (state.activeCountryFilter !== "all" && COUNTRY_META[state.activeCountryFilter]) {
@@ -1862,6 +2094,11 @@
 					} else {
 						url.searchParams.delete("country");
 					}
+					if (trimmedQuery) {
+						url.searchParams.set("q", trimmedQuery);
+					} else {
+						url.searchParams.delete("q");
+					}
 					if (selectedEv) {
 						url.searchParams.set("event", selectedEv.id);
 					} else {
@@ -1889,6 +2126,7 @@
 				const params = new URLSearchParams(window.location.search);
 				const eraParam = params.get("era");
 				const countryParam = params.get("country");
+				const queryParam = params.get("q");
 				const eventParam = params.get("event");
 
 				if (eraParam && ERA_META[eraParam]) {
@@ -1896,6 +2134,10 @@
 				}
 				if (countryParam && COUNTRY_META[countryParam]) {
 					state.activeCountryFilter = countryParam;
+				}
+				if (queryParam) {
+					state.searchQuery = queryParam;
+					if (dom.searchInput) dom.searchInput.value = queryParam;
 				}
 				if (eventParam) {
 					const targetEv = historyEvents.find((e) => e.id === eventParam);
@@ -1905,6 +2147,10 @@
 						}
 						if (state.activeCountryFilter !== "all" && targetEv.country !== state.activeCountryFilter) {
 							state.activeCountryFilter = "all";
+						}
+						if (state.searchQuery && !matchesSearch(targetEv)) {
+							state.searchQuery = "";
+							if (dom.searchInput) dom.searchInput.value = "";
 						}
 						return targetEv.id;
 					}
