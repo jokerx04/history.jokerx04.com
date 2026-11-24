@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>한눈에 보는 한국사·세계사 통합 연표</title>
+		<link>https://history.jokerx04.com/</link>
+		<description>선사·고조선부터 현대까지 한국·중국·일본·러시아·미국/서구 5개국 핵심 역사 사건 858건을 시대별·분야별 타임라인과 인과관계 화살표로 비교하는 인터랙티브 연표입니다.</description>
+		<language>ko</language>
+		<managingEditor>contact@jokerx04.com (jokerx04)</managingEditor>
+		<webMaster>contact@jokerx04.com (jokerx04)</webMaster>
+		<lastBuildDate>Tue, 24 Nov 2026 22:30:00 +0900</lastBuildDate>
+		<atom:link href="https://history.jokerx04.com/rss.xml" rel="self" type="application/rss+xml" />
+		<image>
+			<url>https://history.jokerx04.com/og-image.png</url>
+			<title>한눈에 보는 한국사·세계사 통합 연표</title>
+			<link>https://history.jokerx04.com/</link>
+		</image>
+		<item>
+			<title>한눈에 보는 한국사·세계사 통합 연표 | 5개국 시대별 역사 타임라인</title>
+			<link>https://history.jokerx04.com/</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/</guid>
+			<category>통합 연표</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>선사·고조선부터 현대까지 한국·중국·일본·러시아·미국/서구 5개국 핵심 역사 사건 858건을 시대별·분야별 타임라인과 인과관계 화살표로 한눈에 비교해 보세요.</description>
+			<pubDate>Tue, 24 Nov 2026 22:30:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>고대 (선사 ~ 918) 한국사·세계사 통합 연표</title>
+			<link>https://history.jokerx04.com/?era=ancient</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?era=ancient</guid>
+			<category>고대</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>고대(선사 ~ 918) 주요 역사 사건 197건. 한국: 선사·고조선·삼국·남북국 | 중국: 황허·상·주~한·당 | 일본: 조몬·야요이~헤이안 | 서구: 4대 문명·그리스·로마.</description>
+			<pubDate>Tue, 24 Nov 2026 22:29:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>중세 (918 ~ 1392) 한국사·세계사 통합 연표</title>
+			<link>https://history.jokerx04.com/?era=goryeo</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?era=goryeo</guid>
+			<category>중세</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>중세(918 ~ 1392) 주요 역사 사건 154건. 한국: 고려 | 중국: 송·요·금·원 | 일본: 가마쿠라·무로마치 | 러시아: 키예프 루스 | 서구: 십자군·대헌장.</description>
+			<pubDate>Tue, 24 Nov 2026 22:28:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>근세 (1392 ~ 1876) 한국사·세계사 통합 연표</title>
+			<link>https://history.jokerx04.com/?era=joseon</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?era=joseon</guid>
+			<category>근세</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>근세(1392 ~ 1876) 주요 역사 사건 207건. 한국: 조선 | 중국: 명·청(아편전쟁) | 일본: 전국·에도·메이지유신 | 러시아: 표트르 대제 | 서구: 시민·산업혁명.</description>
+			<pubDate>Tue, 24 Nov 2026 22:27:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>근대 격동기 (1876 ~ 1945) 한국사·세계사 통합 연표</title>
+			<link>https://history.jokerx04.com/?era=modern_early</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?era=modern_early</guid>
+			<category>근대 격동기</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>근대 격동기(1876 ~ 1945) 주요 역사 사건 157건. 한국: 개항·대한제국·독립운동 | 중국: 신해·국공합작 | 일본: 제국주의·패망 | 러시아: 러시아혁명 | 서구: 1·2차 대전.</description>
+			<pubDate>Tue, 24 Nov 2026 22:26:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>현대 (1945 ~ 현재) 한국사·세계사 통합 연표</title>
+			<link>https://history.jokerx04.com/?era=contemporary</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?era=contemporary</guid>
+			<category>현대</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>현대(1945 ~ 현재) 주요 역사 사건 143건. 한국: 정부수립·산업화·민주화 | 중국: 개혁개방 | 일본: 55년체제 | 러시아: 냉전·소련해체 | 서구: UN·데탕트.</description>
+			<pubDate>Tue, 24 Nov 2026 22:25:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>한국사 핵심 연표 (243건)</title>
+			<link>https://history.jokerx04.com/?country=korea</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?country=korea</guid>
+			<category>한국사</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>한국사 주요 역사 사건 243건을 시대·분야별로 정리했습니다. 주요 사건: B.C. 6000년경 신석기 혁명과 빗살무늬 토기·농경 시작, B.C. 2333 고조선 건국과 8조법, B.C. 10세기경 청동기 시대 전개와 비파형 동검, B.C. 800년경 청동기 시대 고인돌 축조와 반달돌칼·벼농사 확산, B.C. 1세기 초 초기 여러 나라의 성장 (부여·고구려·옥저·동예·삼한), B.C. 37년 주몽(동명성왕)의 고구려 건국과 졸본 도읍</description>
+			<pubDate>Tue, 24 Nov 2026 22:24:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>중국사 핵심 연표 (175건)</title>
+			<link>https://history.jokerx04.com/?country=china</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?country=china</guid>
+			<category>중국사</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>중국사 주요 역사 사건 175건을 시대·분야별로 정리했습니다. 주요 사건: B.C. 1600년경 상(은) 왕조 성립과 갑골문·신정 정치, B.C. 500년경 공자의 유가 사상 창시와 『논어』, B.C. 403 춘추 전국 시대와 제자백가 출현, B.C. 400년경 철제 농기구·우경 보급과 전국칠웅의 경제 성장, B.C. 359 진 효공과 상앙의 법가적 변법 개혁, B.C. 221 진시황의 중국 최초 통일과 법가 통치</description>
+			<pubDate>Tue, 24 Nov 2026 22:23:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>일본사 핵심 연표 (144건)</title>
+			<link>https://history.jokerx04.com/?country=japan</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?country=japan</guid>
+			<category>일본사</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>일본사 주요 역사 사건 144건을 시대·분야별로 정리했습니다. 주요 사건: B.C. 3세기경 야요이 시대 개막과 한반도계 벼농사·청동기·철기 수용, 538년 백제 성왕의 불교 전래와 아스카 문화 발달, 604년 쇼토쿠 태자의 관위 12계와 17조 헌법 제정, 607년 쇼토쿠 태자의 견수사 파견과 대등 외교 추구, 630년 제1차 견당사 파견과 당 선진 문물 수용, 663년 백강(백촌강) 전투 패배와 서일본 방위 체제 구축</description>
+			<pubDate>Tue, 24 Nov 2026 22:22:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>러시아사 핵심 연표 (119건)</title>
+			<link>https://history.jokerx04.com/?country=russia</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?country=russia</guid>
+			<category>러시아사</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>러시아사 주요 역사 사건 119건을 시대·분야별로 정리했습니다. 주요 사건: 863년 키릴·메토디우스의 슬라브 문자 창제와 전파, 988년 블라디미르 대공의 키예프 루스 정교회 국교화 (루스 세례), 1240년 바투 칸의 랴잔·블라디미르·키예프 함락과 루스 정복, 1242년 킵차크 칸국(금장 한국) 성립과 &apos;타타르의 멍에&apos;, 1472년 이반 3세의 비잔티움 황녀 혼인과 &apos;제3의 로마&apos; 표방, 1480년 우그라강 대치와 &apos;타타르의 멍에&apos; 완전 종식</description>
+			<pubDate>Tue, 24 Nov 2026 22:21:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>미국·서구사 핵심 연표 (177건)</title>
+			<link>https://history.jokerx04.com/?country=west</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?country=west</guid>
+			<category>미국·서구사</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>미국·서구사 주요 역사 사건 177건을 시대·분야별로 정리했습니다. 주요 사건: B.C. 3500년경 메소포타미아 수메르 문명과 쐐기문자·지구라트, B.C. 3000년경 이집트 통일 왕국 성립과 피라미드·상형문자, B.C. 1750년경 바빌로니아 함무라비 법전 편찬과 성문법 체계, B.C. 550년 아케메네스 왕조 페르시아 건국과 오리엔트 통일, B.C. 509 로마 공화정 수립과 호민관·12표법 제정, B.C. 500년경 인도 불교(석가모니) 창시와 브라만교 비판</description>
+			<pubDate>Tue, 24 Nov 2026 22:20:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · B.C. 2333] 고조선 건국과 8조법</title>
+			<link>https://history.jokerx04.com/?event=evt-001</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-001</guid>
+			<category>고대 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>청동기 문화를 배경으로 단군왕검이 아사달에 도읍하여 건국한 우리 역사 최초의 국가입니다. 사유재산과 계급 사회를 보여주는 8조법이 시행되었습니다. (핵심 인물·세력: 단군왕검) #단군왕검 #홍익인간 #제정일치 #8조법</description>
+			<pubDate>Tue, 24 Nov 2026 22:19:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 400년] 광개토대왕의 만주 정복과 신라 구원</title>
+			<link>https://history.jokerx04.com/?event=evt-018</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-018</guid>
+			<category>고대 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>광개토대왕은 독자적 연호 &apos;영락&apos;을 사용하고 요동·만주를 정복했으며, 신라 내물왕의 요청으로 군사를 보내 왜군을 격퇴했습니다. (핵심 인물·세력: 광개토대왕) #영락 연호 #신라 내물왕 구원 #호우명 그릇 #후연·거란 격파</description>
+			<pubDate>Tue, 24 Nov 2026 22:18:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 7세기 후반] 원효의 일심·화쟁 사상과 의상의 화엄종 개창</title>
+			<link>https://history.jokerx04.com/?event=evt-033</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-033</guid>
+			<category>고대 · 문화·사상</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>원효는 모든 것이 한마음에서 나온다는 일심 사상과 종파 갈등을 조화시키는 화쟁 사상을 주장하며 아미타 신앙으로 불교 대중화에 앞장섰고, 의상은 화엄 사상을 정립했습니다. (핵심 인물·세력: 원효·의상) #일심 사상 #화쟁 사상 #아미타 신앙 #화엄일승법계도</description>
+			<pubDate>Tue, 24 Nov 2026 22:17:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 918년] 왕건의 고려 건국과 후삼국 통일</title>
+			<link>https://history.jokerx04.com/?event=evt-042</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-042</guid>
+			<category>중세 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>궁예를 몰아내고 고려를 건국한 태조 왕건은 신라의 항복(935)과 후백제 격파(936)로 후삼국을 통일하고, 발해 유민을 포용하며 민족의 재통일을 이루었습니다. (핵심 인물·세력: 태조 왕건) #송악(개경) 천도 #북진 정책 #호족 통합책(사성·혼인) #훈요 10조</description>
+			<pubDate>Tue, 24 Nov 2026 22:16:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[미국·서구 · 1096년] 서유럽 십자군 전쟁 시작</title>
+			<link>https://history.jokerx04.com/?event=evt-051</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-051</guid>
+			<category>중세 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>비잔티움 황제의 구원 요청을 받은 교황 우르바누스 2세가 클레르몽 공의회에서 성지 예루살렘 탈환을 호소하며 약 200년간 이어진 십자군 전쟁이 시작되었습니다. (핵심 인물·세력: 교황 우르바누스 2세) #클레르몽 공의회 #예루살렘 탈환 #교황권 쇠퇴 #지중해 무역 활성화</description>
+			<pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1377년] 청주 흥덕사에서 『직지심체요절』 금속활자 인쇄</title>
+			<link>https://history.jokerx04.com/?event=evt-066</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-066</guid>
+			<category>중세 · 문화·사상</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>고려 우왕 때 청주 흥덕사에서 백운화상이 엮은 『직지심체요절』이 금속활자로 인쇄되어, 구텐베르크의 금속활자보다 78년 앞선 현존 세계 최고 금속활자본으로 인정받았습니다. (핵심 인물·세력: 백운화상 경한) #현존 세계 최고(最古) 금속활자본 #청주 흥덕사 #유네스코 세계기록유산</description>
+			<pubDate>Tue, 24 Nov 2026 22:14:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1446년] 훈민정음 창제 및 반포와 과학 기술 발달</title>
+			<link>https://history.jokerx04.com/?event=evt-072</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-072</guid>
+			<category>근세 · 문화·사상</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>세종은 백성을 가르치는 바른 소리인 훈민정음을 창제(1443)·반포(1446)하고, 집현전을 육성하며 측우기·혼천의·자격루·『농사직설』·『칠정산』 등 자주적 과학·농업 문화를 꽃피웠습니다. (핵심 인물·세력: 세종·집현전 학자·장영실) #훈민정음(1443 창제·1446 반포) #집현전 #측우기·앙부일구·자격루 #칠정산</description>
+			<pubDate>Tue, 24 Nov 2026 22:13:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[일본 · 1592년] 도요토미 히데요시의 일본 전국 통일과 임진왜란 도발</title>
+			<link>https://history.jokerx04.com/?event=evt-079</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-079</guid>
+			<category>근세 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>일본의 전국 시대를 통일한 도요토미 히데요시는 내부 무사 세력의 불만을 밖으로 돌리고 대륙 침략 야욕을 채우기 위해 &apos;정명가도&apos;를 내세워 조선을 침략했습니다. (핵심 인물·세력: 도요토미 히데요시) #전국 시대 통일 #검지·병농 분리 #정명가도 구실 침략 #동아시아 국제전</description>
+			<pubDate>Tue, 24 Nov 2026 22:12:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1592년] 이순신의 한산도·명량 대첩과 임진왜란 극복</title>
+			<link>https://history.jokerx04.com/?event=evt-080</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-080</guid>
+			<category>근세 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>관군의 초기 패배 속에서도 이순신이 이끄는 수군이 한산도·명량 대첩으로 남해 제해권을 장악하고 전국에서 의병이 봉기하여 일본의 침략을 물리쳤습니다. (핵심 인물·세력: 이순신·권율·곽재우) #한산도 대첩(학익진) #진주 대첩(김시민) #행주 대첩(권율) #명량·노량 해전</description>
+			<pubDate>Tue, 24 Nov 2026 22:11:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1636년] 인조반정과 병자호란·삼전도의 굴욕</title>
+			<link>https://history.jokerx04.com/?event=evt-084</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-084</guid>
+			<category>근세 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>인조반정 이후 서인 정권이 친명배금 정책을 펴자 후금이 정묘호란(1627)을 일으켰고, 이어 국호를 청으로 고치고 군신 관계를 요구하며 병자호란(1636)을 일으켜 인조가 삼전도에서 항복했습니다. (핵심 인물·세력: 인조·김상헌·최명길) #친명배금 정책 #정묘호란(1627) #병자호란(1636) #남한산성 항전</description>
+			<pubDate>Tue, 24 Nov 2026 22:10:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[미국·서구 · 1789년] 프랑스 대혁명과 인권 선언</title>
+			<link>https://history.jokerx04.com/?event=evt-096</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-096</guid>
+			<category>근세 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>삼부회 소집을 계기로 제3신분(평민)이 국민 의회를 결성하고 바스티유 감옥을 습격하여 인권 선언을 발표했으며, 봉건제 폐지와 자유주의 이념을 전 유럽에 확산시켰습니다. (핵심 인물·세력: 로베스피에르·나폴레옹) #구제도의 모순 #바스티유 감옥 습격 #인간과 시민의 권리 선언 #국민 공회·공화정 선포</description>
+			<pubDate>Tue, 24 Nov 2026 22:09:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1871년] 병인양요·신미양요와 척화비 건립</title>
+			<link>https://history.jokerx04.com/?event=evt-105</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-105</guid>
+			<category>근세 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>프랑스 함대가 강화도를 침공한 병인양요(1866)와 미국 함대가 침공한 신미양요(1871)를 격퇴한 흥선대원군은 전국 각지에 척화비를 세워 통상 수교 거부 정책을 천명했습니다. (핵심 인물·세력: 흥선대원군·한성근·양헌수·어재연) #병인박해·병인양요(1866) #오페르트 도굴 사건(1868) #제너럴 셔먼호·신미양요(1871) #척화비 건립</description>
+			<pubDate>Tue, 24 Nov 2026 22:08:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1894년] 제1·2차 갑오개혁과 홍범 14조 반포</title>
+			<link>https://history.jokerx04.com/?event=evt-111</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-111</guid>
+			<category>근대 격동기 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>1차 갑오개혁에서는 군국기무처를 중심으로 신분제·과거제·연좌제를 폐지하고 은본위제와 조세 금납화를 시행했으며, 2차 갑오개혁에서는 홍범 14조를 반포하고 지방 행정 구역을 8도에서 23부로 개편했습니다. (핵심 인물·세력: 김홍집·박영효·군국기무처) #군국기무처(1차) #신분제·과거제 폐지 #조혼 금지·과부 재가 허용 #홍범 14조(2차)</description>
+			<pubDate>Tue, 24 Nov 2026 22:07:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1905년] 을사늑약 체결(외교권 박탈)과 항일 의병 봉기</title>
+			<link>https://history.jokerx04.com/?event=evt-116</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-116</guid>
+			<category>근대 격동기 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>러·일 전쟁에서 승리한 일본이 고종의 반대를 무릅쓰고 을사늑약을 강제 체결해 대한제국의 외교권을 박탈하고 통감부를 설치했으며, 이에 맞서 최익현과 평민 의병장 신돌석 등이 을사의병을 일으켰습니다. (핵심 인물·세력: 고종·민영환·최익현·신돌석) #외교권 박탈 #통감부 설치(이토 히로부미) #고종 비준 거부 #을사의병(최익현·평민 의병장 신돌석)</description>
+			<pubDate>Tue, 24 Nov 2026 22:06:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[중국 · 1911년] 중국 신해혁명과 중화민국 수립</title>
+			<link>https://history.jokerx04.com/?event=evt-121</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-121</guid>
+			<category>근대 격동기 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>청 정부의 철도 국유화 조치에 반발해 우창에서 신군이 봉기하며 신해혁명이 일어났고, 쑨원이 임시 대총통에 취임해 난징을 수도로 중화민국을 수립하며 2천여 년의 황제 전제 정치가 막을 내렸습니다. (핵심 인물·세력: 쑨원·위안스카이) #삼민주의(민족·민권·민생) #우창 봉기(1911) #중화민국 수립(1912) #청 왕조 멸망</description>
+			<pubDate>Tue, 24 Nov 2026 22:05:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[러시아 · 1917년] 러시아 10월 혁명과 소비에트 정권 수립</title>
+			<link>https://history.jokerx04.com/?event=evt-123</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-123</guid>
+			<category>근대 격동기 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>제1차 세계 대전의 참화로 3월 혁명이 일어나 제정이 무너진 데 이어, 레닌이 이끄는 볼셰비키가 10월 혁명으로 세계 최초의 사회주의 정권을 수립하고 1922년 소비에트 사회주의 공화국 연방(소련)을 결성했습니다. (핵심 인물·세력: 레닌·볼셰비키) #3월 혁명(로마노프 왕조 붕괴) #10월 혁명(레닌) #브레스트-리토프스크 조약 #신경제 정책(NEP)</description>
+			<pubDate>Tue, 24 Nov 2026 22:04:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1919년] 3·1 운동과 대한민국 임시 정부 수립</title>
+			<link>https://history.jokerx04.com/?event=evt-124</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-124</guid>
+			<category>근대 격동기 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>일제의 무단 통치에 맞서 1919년 3월 1일 독립선언서 발표와 함께 전국적 만세 시위가 전개되었고, 이를 계기로 독립운동의 구심점인 대한민국 임시 정부가 상하이에 수립되었습니다. (핵심 인물·세력: 민족 대표 33인·유관순·이동녕·이승만·김구) #고종 인산일 #기미독립선언서 #제암리 학살 사건 #상하이 임시 정부</description>
+			<pubDate>Tue, 24 Nov 2026 22:03:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[중국 · 1919년] 중국 5·4 운동과 파리 강화 회의</title>
+			<link>https://history.jokerx04.com/?event=evt-125</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-125</guid>
+			<category>근대 격동기 · 정치·제도</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>파리 강화 회의에서 중국의 주권 회복 요구가 묵살되자 1919년 5월 4일 베이징 대학생들의 시위로 시작해 노동자 파업과 상인 철시로 확산된 대규모 반제국주의 민족 운동입니다. (핵심 인물·세력: 천두슈·베이징 대학생·노동자·상인) #일본 21개조 요구 철폐 #산둥반도 이권 반환 요구 #반제국주의·반군벌 운동 #중국 공산당 창당 배경</description>
+			<pubDate>Tue, 24 Nov 2026 22:02:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1945년] 8·15 광복과 모스크바 3국 외상 회의</title>
+			<link>https://history.jokerx04.com/?event=evt-134</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-134</guid>
+			<category>현대 · 대외·전쟁</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>제2차 세계 대전에서 일본이 항복하며 1945년 8월 15일 광복을 맞이했으나 미·소 양군이 38도선을 경계로 분할 점령했고, 모스크바 3국 외상 회의의 신탁 통치 문제를 둘러싸고 좌·우익이 격렬히 대립했습니다. (핵심 인물·세력: 여운형·김구·이승만) #카이로 회담(최초 독립 약속) #8·15 광복 #38도선 분할 점령 #모스크바 3국 외상 회의(1945.12)</description>
+			<pubDate>Tue, 24 Nov 2026 22:01:00 +0900</pubDate>
+		</item>
+		<item>
+			<title>[한국 · 1949년] 반민족 행위 처벌법과 농지 개혁법 제정</title>
+			<link>https://history.jokerx04.com/?event=evt-136</link>
+			<guid isPermaLink="true">https://history.jokerx04.com/?event=evt-136</guid>
+			<category>현대 · 경제·사회</category>
+			<author>contact@jokerx04.com (jokerx04)</author>
+			<description>제헌 국회는 친일 반민족 행위자를 처벌하기 위해 반민특위를 구성했으나 이승만 정부의 소극적 태도와 경찰의 반민특위 습격으로 좌절되었고, 1949년 유상 매수·유상 분배 원칙의 농지 개혁법을 제정해 지주·소작제를 폐지했습니다. (핵심 인물·세력: 제헌 국회·조봉암 농림부 장관) #반민특위 활동 #친일파 청산 좌절 #농지 개혁법(1949) #유상 매수·유상 분배</description>
+			<pubDate>Tue, 24 Nov 2026 22:00:00 +0900</pubDate>
+		</item>
+	</channel>
+</rss>
